@@ -11,6 +11,7 @@ RUN apt-get install -y locales \
                        apt-transport-https \
                        bash-completion \
                        wget \
+                       cowsay cowsay-off \
                        vim \
                        curl \
                        gnupg2 \
