@@ -21,6 +21,9 @@ RUN apt-get install -y locales \
                        net-tools \
                        jq
 
+RUN ln -s /usr/games/cowsay /usr/local/bin/cowsay && \
+    ln -s /usr/games/cowthink /usr/local/bin/cowthink
+
 RUN apt-get install -y libxml2 zlib1g-dev \
                       build-essential \
                       ruby-full \
