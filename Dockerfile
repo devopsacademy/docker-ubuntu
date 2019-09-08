@@ -6,7 +6,8 @@ ENV LANG=en_US.UTF-8
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN apt-get install -y locales \
+RUN apt-get install -y apt-utils \
+                       locales \
                        openssh-client \
                        apt-transport-https \
                        bash-completion \
